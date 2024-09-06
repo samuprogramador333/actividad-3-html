@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalogo de productos multimedia </title>
 </head>
 <body>
-    <h1> hola mis muñecos </h1>
+    <table border="1" width="80%" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Descripción</th>
+                <th>Vista previa</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Video Promocional</td>
+                <td rowspan="2">Un video que muestra las características del producto.</td>
+                <td>
+                    <video controls width="200">
+                        <source src="video.mp4" type="video/mp4">
+                        
+                    </video>
+                </td>
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <td>Imagen del Producto</td>
+                <td>
+                    <img src="imagen.jpg" alt="Imagen del producto" width="200">
+                </td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Audio Descripción</td>
+                <td>Descripción en audio del producto.</td>
+                <td>
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                        Tu navegador no soporta la etiqueta de audio.
+                    </audio>
+                </td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>Gráfico Interactivo</td>
+                <td>Gráfico SVG representando datos del producto.</td>
+                <td>
+                    <svg width="200" height="100">
+                        <rect width="200" height="100" style="fill:blue" />
+                        Lo siento, tu navegador no soporta SVG.
+                    </svg>
+                </td>
+                <td>$20.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" align="right">Total de productos: 4</td>
+                <td>$50.00</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
